@@ -23,9 +23,7 @@ public class UsuarioService {
 		if(usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
 			return null;
 		
-		if(usuarioRepository.findByEmail(usuario.getEmail()).isPresent())
-			return null;
-		
+		//Código para acrescentar verificação de idade (implementação futura)
 		//int idade = Period.between(usuario.getDataNascimento(), LocalDate.now()).getYears();
 		
 		//if(idade < 18)
