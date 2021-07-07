@@ -9,6 +9,8 @@ import br.org.generation.meuBlogPessoal.model.Usuario;
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	
 	public Optional<Usuario> findByUsuario(String usuario);
+	
+	
 
 	/*
 	 * Implementação futura
